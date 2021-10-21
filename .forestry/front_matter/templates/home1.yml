@@ -1,0 +1,200 @@
+---
+label: home1
+hide_body: true
+fields:
+- type: text
+  name: baseURL
+  label: baseURL
+- type: text
+  name: title
+  label: title
+- type: text
+  name: languageName
+  label: languageName
+- type: text
+  name: languageCode
+  label: languageCode
+- type: text
+  name: theme
+  label: theme
+- type: text
+  name: paginate
+  label: paginate
+- type: text
+  name: summaryLength
+  label: summaryLength
+- type: text
+  name: disqusShortname
+  label: disqusShortname
+- type: list
+  name: disableLanguages
+  label: disableLanguages
+- type: text
+  name: googleAnalytics
+  label: googleAnalytics
+- type: field_group
+  name: outputs
+  label: outputs
+  fields:
+  - type: list
+    name: home
+    label: home
+- type: field_group
+  name: markup
+  label: markup
+  fields:
+  - type: field_group
+    name: goldmark
+    label: goldmark
+    fields:
+    - type: field_group
+      name: renderer
+      label: renderer
+      fields:
+      - type: boolean
+        name: unsafe
+        label: unsafe
+- type: field_group
+  name: taxonomies
+  label: taxonomies
+  fields:
+  - type: text
+    name: category
+    label: category
+  - type: text
+    name: tag
+    label: tag
+  - type: text
+    name: author
+    label: author
+- type: field_group
+  name: menu
+  label: menu
+  fields:
+  - type: field_group_list
+    name: main
+    label: main
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: text
+      name: URL
+      label: URL
+    - type: number
+      name: weight
+      label: weight
+  - type: field_group_list
+    name: desktop
+    label: desktop
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: text
+      name: URL
+      label: URL
+    - type: number
+      name: weight
+      label: weight
+- type: field_group
+  name: params
+  label: params
+  fields:
+  - type: text
+    name: description
+    label: description
+  - type: text
+    name: author
+    label: author
+  - type: field_group
+    name: banner
+    label: banner
+    fields:
+    - type: text
+      name: heading
+      label: heading
+    - type: file
+      name: image
+      label: image
+  - type: field_group
+    name: blog
+    label: blog
+    fields:
+    - type: textarea
+      name: heading
+      label: heading
+  - type: field_group
+    name: call_to_action
+    label: call_to_action
+    fields:
+    - type: boolean
+      name: enable
+      label: enable
+    - type: text
+      name: title
+      label: title
+    - type: textarea
+      name: content
+      label: content
+    - type: text
+      name: button_label
+      label: button_label
+    - type: text
+      name: button_url
+      label: button_url
+  - type: field_group
+    name: gallery
+    label: gallery
+    fields:
+    - type: boolean
+      name: enable
+      label: enable
+    - type: field_group_list
+      name: gallery_item
+      label: gallery_item
+      fields:
+      - type: file
+        name: image
+        label: image
+  - type: field_group
+    name: footer
+    label: footer
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: text
+      name: content
+      label: content
+    - type: text
+      name: address
+      label: address
+    - type: text
+      name: hours
+      label: hours
+    - type: textarea
+      name: copyright
+      label: copyright
+  - type: field_group
+    name: social
+    label: social
+    fields:
+    - type: text
+      name: yelp
+      label: yelp
+    - type: text
+      name: facebook
+      label: facebook
+    - type: text
+      name: twitter
+      label: twitter
+    - type: text
+      name: instagram
+      label: instagram
+    - type: text
+      name: email
+      label: email
+    - type: text
+      name: linkedin
+      label: linkedin
